@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.content {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1024px;
+}
+/*Generic Line*/
+.line {
+    max-width: 1024px;
+    height: 10px;
+    background-color: rgb(24, 192, 24);
+    border-width: 0;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-family: "Arvo", serif;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 300px;
+}
+header p, header h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+#imgheader {
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* The two links */
+#linkcontainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+#linkcontainer a {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 80%;
+}
+#resumelink {
+    background-color: rgb(6, 6, 202);
+}
+#resumelink:hover {
+    text-decoration: underline;
+}
+#contactlink {
+    background-color: rgb(130, 23, 230);
+}
+#contactlink:hover {
+    text-decoration: underline;
+}
+#headerline {
+    width: 95%;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+/* Infographic */
+#infographic {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+#abouthonest {
+    max-width: 700px;
+}
+#abouthonest h3 {
+    margin: 16px 0;
+}
+#basic {
+    width: auto;
+}
+#infoline {
+    margin: 0;
+}
+
+/* Education */
+#education {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    column-gap: 15px;
+    row-gap: 16px;
+}
+.edushort {
+    padding: 25px 20px;
+    border: 4px double skyblue;
+}
+.edushort p, .edushort h3 {
+    margin: 0;
+    text-align: center;
+}
+.edulong p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+main h2 {
+    text-align: center;
+    margin: 16px 0;
+}
+#eduline {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+/* Form */
+fieldset {
+    max-width: 400px;
+    margin: 0;
+    border: 1px solid grey;
+    border-bottom: 0;
+    padding: 0.5em 0;
+}
+legend {
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+textarea {
+    max-width: 600px;
+    max-height: 6em;
+    width: 400px;
+    margin: 0;
+    border: 1px solid black;
+    padding: 0;
+}
+input[type="text"], input[type="email"] {
+    margin: 0.5em 0;
+    height: 1.5em;
+}
+#usr_status {
+    margin: 1em 0;
+}
+#usr_submit {
+    margin: 0.5em 0;
+    height: 3em;
+    width: 5em;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 10px;
+}
+#usr_submit:hover {
+    background-color: rgb(154, 4, 4);
+}
+#usr_submit:active {
+    background-color: red;
+}
+form {
+    margin-left: 30%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    #infographic {
+        display: block;
+    }
+    #education {
+        display: block;
+    }
+    .edushort {
+        margin-bottom: 16px;
+    }
+    form {
+        margin: 0;
+    }
+}

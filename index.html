@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Web Site</title>
+        <link rel="stylesheet" href="styling.css" type="text/css">
+    </head>
+
+    <body>
+        <header class="content">
+            <img src="personal_image.jpg" alt="not working!">
+            <p id="imgheader"><em>This is my scooter that I have had since childhood. It represents my love for fun and adventure, and also my sentimentality.</em></p>
+            <h1>SHAHPER MALIK</h1>
+            <p>Software Developer, Front-end Developer, Software Engineer</p>
+            <div id="linkcontainer">
+                <a id="resumelink" href="WEBresume.docx" download="SM_resume">Download my Resume</a>
+                <a id="contactlink" href="#contactme">Contact me</a>
+            </div>
+        </header>
+        <hr class="line" id="headerline">
+        <main class="content">
+            <section id="infographic">
+                <div id="abouthonest">
+                    <h3>About me</h3>
+                    <p>
+                        My name is Shahper Malik, and I am currently a student at Seneca College in the Computer Programming 
+                        and Analysis (CPA) program. In the future I hope to graduate the CPA program, and maybe continue studying 
+                        at a University Computer Science program or start a stable career. In my free time, I love reading about 
+                        random stuff on Wikipedia, playing Basketball, and watching documentaries.
+                    </p>
+                    <h3>Honesty Statement</h3>
+                    <p>
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                        Policy. No part of this assessment has been copied manually or electronically from any other
+                        source (including web sites) except for the information supplied by the WEB222 instructors and /
+                        or made available in this assessment for my use. I also declare that no part of this assignment
+                        has been distributed to other students.
+                    </p>
+                </div>
+                <div id="basic">
+                    <p><b>Course: </b>WEB222</p>
+                    <p><b>Section: </b>NHH</p>
+                    <p><b>Professor: </b>Siyavash Ghasseminia</p>
+                    <p><b>Date: </b></p>
+                </div>
+            </section>
+            <hr class="line" id="infoline">
+            <h2>Education</h2>
+            <section id="education">
+                <div class="edushort">
+                    <p>Seneca College</p>
+                    <h3>Ontario College Advanced Diploma</h3>
+                </div>
+                <div class="edulong">
+                    <p>2024 or 2025 (Expected).</p>
+                    <p>In the Computer Programming and Analysis (CPA) program.</p>
+                    <p>Run at the Seneca Newnham Campus, for a total of 6 semesters.</p>
+                </div>
+                <div class="edushort">
+                    <p>Milliken Mills High School</p>
+                    <h3>Ontario Secondary School Diploma</h3>
+                </div>
+                <div class="edulong">
+                    <p>Since 2019.</p>
+                    <p>Graduated with honor roll.</p>
+                    <p>Participated in tech design club and computer science club.</p>
+                </div>
+            </section>
+            <hr class="line" id="eduline">
+            <section id="contactme">
+                <h2>Contact Me</h2>
+                <form id="contactform" action="https://httpbin.org/post" method="POST">
+                    <label for="usr_name">Name</label>
+                    <input id="usr_name" name="username" type="text" maxlength="50" required>
+                    <br>
+
+                    <label for="usr_email">Email Address</label>
+                    <input id="usr_email" name="emailaddress" type="email">
+                    <br>
+
+                    <label for="usr_addr">Address</label>
+                    <input id="usr_addr" name="address" type="text" required>
+                    <br>
+
+                    <label for="usr_city">City</label>
+                    <input id="usr_city" name="city" type="text" list="commoncities" required>
+                    <datalist id="commoncities">
+                        <option value="Toronto">
+                        <option value="Mississauga">
+                        <option value="Oshawa">
+                        <option value="Hamilton">
+                        <option value="Brampton">
+                        <option value="Markham">
+                    </datalist>
+                    <br>
+
+                    <label for="usr_pc">Postal Code</label>
+                    <input id="usr_pc" name="postalcode" type="text" pattern="^[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$">
+                    <br>
+
+                    <fieldset>
+                        <legend>Subject Matter</legend>
+                        <input id="usr_question" name="about" type="radio" value="question" checked>
+                        <label for="usr_question">Question</label>
+                        <input id="usr_comment" name="about" type="radio" value="comment">
+                        <label for="usr_comment">Comment</label>
+                        <input id="usr_hiring" name="about" type="radio" value="hiring">
+                        <label for="usr_hiring">Hiring</label>
+                    </fieldset>
+                    <div id="hourlyoption" hidden>
+                        <label for="usr_hr">Hourly rate: $</label>
+                        <input id="usr_hr" name="hourlyrate" type="text">
+                    </div>
+
+                    <textarea id="usr_message" name="message" rows="5" placeholder="Enter message here..." required></textarea>
+                    <br>
+
+                    <input id="usr_status" name="status" type="checkbox" value="urgent">
+                    <label for="usr_status">Is this message of urgent priority?</label>
+                    <br>
+
+                    <input id="usr_submit" name="submitbutton" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <script src="dynamic.js"></script>
+    </body>
+</html>
